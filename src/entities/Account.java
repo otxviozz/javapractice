@@ -4,6 +4,10 @@ public class Account {
     private String accountNumber;
     private String owner;
     private double balance;
+    
+    public Account() {
+    	
+    }
 
     public Account(String accountNumber, String owner, double balance) {
         this.accountNumber = accountNumber;
