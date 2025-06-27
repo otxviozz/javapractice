@@ -72,18 +72,6 @@ public class OperationService {
         System.out.print("Digite novo nome do titular: ");
         c.setOwner(scan.nextLine());
 
-        System.out.print("Digite novo saldo: ");
-        while (true) {
-            try {
-                String saldoStr = scan.nextLine();
-                double saldo = Double.parseDouble(saldoStr);
-                c.setBalance(saldo);
-                break;
-            } catch (NumberFormatException e) {
-                System.out.println("Saldo inválido. Digite um valor numérico.");
-            }
-        }
-
         System.out.println("Dados atualizados com sucesso!");
     }
 
